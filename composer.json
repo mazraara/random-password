@@ -5,7 +5,7 @@
   "require": {
     "php": "^7.2"
   },
-  "license": "GNU",
+  "license": "proprietary",
   "authors": [
     {
       "name": "Azraar Azward",
