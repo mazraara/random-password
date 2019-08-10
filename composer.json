@@ -15,7 +15,7 @@
   "minimum-stability": "dev",
   "autoload": {
     "psr-4": {
-      "mazraara\\random-password\\": "src/"
+      "mazraara\\randomPassword\\": "src/"
     }
   }
 }
