@@ -1,15 +1,21 @@
 {
-    "name": "mazraara/random-password",
-    "description": "Generate random password of a given length",
-    "type": "library",
-    "require": {
-        "php": "^7.2"
-    },
-    "authors": [
-        {
-            "name": "Azraar Azward",
-            "email": "mazraara@gmail.com"
-        }
-    ],
-    "minimum-stability": "dev"
+  "name": "mazraara/random-password",
+  "description": "Generate random password of a given length",
+  "type": "library",
+  "require": {
+    "php": "^7.2"
+  },
+  "license": "GNU",
+  "authors": [
+    {
+      "name": "Azraar Azward",
+      "email": "mazraara@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "mazraara\\random-password\\": "src/"
+    }
+  }
 }
