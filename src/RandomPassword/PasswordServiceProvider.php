@@ -16,8 +16,6 @@ class PasswordServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton(Password::class, function () {
-            return new Password('6');
-        });
+        $this->app->singleton('randomPassword', Password::class);
     }
 }
