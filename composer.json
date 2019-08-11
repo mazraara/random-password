@@ -18,12 +18,10 @@
   "minimum-stability": "dev",
   "autoload": {
     "psr-4": {
-      "mazraara\\randomPassword\\": "src/"
-    }
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "mazraara\\randomPassword\\": "tests/"
-    }
+      "RandomPassword\\": "src/RandomPassword/"
+    },
+    "files": [
+      "src/RandomPassword/Password.php"
+    ]
   }
 }
