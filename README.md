@@ -12,7 +12,7 @@ Genrate random password.
 ```php
 <?php
 
-use mazraara\randomPassword\Password;
+use RandomPassword\Password;
 
 $password = new Password(10);
 echo $password->generate();
