@@ -1,35 +1,24 @@
 {
-  "name": "mazraara/random-password",
+  "name": "m-housni/random-password",
   "description": "Generate random password of a given length",
   "type": "library",
   "require": {
-    "php": ">=7.1.3",
-    "illuminate/support": "5.6.* || 5.7.* || 5.8.* || 6.0.*"
+    "php": ">=7.1.3"
   },
   "license": "proprietary",
   "authors": [
     {
-      "name": "Azraar Azward",
-      "email": "mazraara@gmail.com"
+      "name": "Housni Mohamed",
+      "email": "mohamed.housni@um5s.net.ma"
     }
   ],
   "minimum-stability": "dev",
   "autoload": {
     "psr-4": {
-      "RandomPassword\\": "src/RandomPassword/"
+      "RandomPassword\\": "src/"
     },
     "files": [
-      "src/RandomPassword/Password.php"
+      "src/Password.php"
     ]
-  },
-  "extra": {
-    "laravel": {
-      "providers": [
-        "RandomPassword\\PasswordServiceProvider"
-      ]
-    }
-  },
-  "require-dev": {
-    "orchestra/testbench": "^3.8"
   }
 }

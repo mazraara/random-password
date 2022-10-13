@@ -4,11 +4,11 @@ Generate random password of a given length
 ## Installation
 This project using composer.
 ```
-$ composer require mazraara/random-password
+$ composer require m-housni/random-password
 ```
 
 ## Usage
-Genrate random password.
+Generate random password.
 ```php
 <?php
 
