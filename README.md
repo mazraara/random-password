@@ -8,7 +8,7 @@ $ composer require mazraara/random-password
 ```
 
 ## Usage
-Genrate random password.
+Generate random password.
 ```php
 <?php
 
