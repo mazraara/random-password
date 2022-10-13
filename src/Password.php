@@ -28,6 +28,3 @@ class Password
         return implode($password); 
     }
 }
-
-$password = new Password();
-echo $password->generate();
