@@ -1,27 +1,33 @@
 <?php
 
-namespace RandomPassword;
+// namespace is used to avoid name collision
+namespace RandomPassword; 
+
+require_once 'config.php';
 
 class Password
 {
-    private $length = 8;
+    private $length; 
 
-    public function __construct($length)
+    public function __construct($length = DEFAULT_PASSWORD_LENGTH)
     {
         $this->length = $length;
     }
 
     public function generate()
     {
-        $alphabet = "abcdefghijklmnopqrstuwxyzABCDEFGHIJKLMNOPQRSTUWXYZ0123456789[{(*%+-$#@!)}]";
-        $pass = [];
-        $alphaLength = strlen($alphabet) - 1;
+        $password = [];
+        $len = strlen(ALPHABET) - 1;
 
         for ($i = 0; $i < $this->length; $i++)
         {
-            $n = rand(0, $alphaLength);
-            $pass[] = $alphabet[$n];
+            $n = rand(0, $len); 
+            $password[] = ALPHABET[$n]; 
         }
-        return implode($pass);
+        
+        return implode($password); 
     }
 }
+
+$password = new Password();
+echo $password->generate();
